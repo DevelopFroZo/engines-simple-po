@@ -14,5 +14,5 @@
     "inlineSourceMap": true,
     "allowJs": true
   },
-  "exclude": [ "static", "build" ]
+  "exclude": [ "__safety__", "static", "build" ]
 }

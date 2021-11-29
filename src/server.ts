@@ -58,11 +58,11 @@ async function index(){
   } );
 
   app.post( "/api/calibration", async ( { body: { good: good_, bad: bad_ } }, res ) => {
-    if( good_ !== null && !isNaN( good_ ) && typeof( good_ ) === "number" ){
+    if( !isNaN( good_ ) && typeof( good_ ) === "number" ){
       good = good_;
     }
 
-    if( bad_ !== null && !isNaN( bad_ ) && typeof( bad_ ) === "number" ){
+    if( !isNaN( bad_ ) && typeof( bad_ ) === "number" ){
       bad = bad_;
     }
 

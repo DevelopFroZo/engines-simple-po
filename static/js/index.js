@@ -46,13 +46,19 @@ function onAlgo( [ edgesCount, percent ] ){
     percent = "N/A";
   }
 
-  results.innerHTML += 
-    `<tr>
-      <td>${count++}</td>
-      <td>${getCurrentDate()}</td>
-      <td>${edgesCount}</td>
-      <td>${percent}</td>
-    </tr>`;
+  results.innerHTML +=
+    `<div class = "col-12 col-lg-4">
+      <div class = "card bg-light mb-2">
+        <div class = "card-header">Анализ №${count++}</div>
+        <div class = "card-body">
+          <h5 class = "card-title">${getCurrentDate()}</h5>
+          <div class = "card-text">
+            <div>Количество рёбер: ${edgesCount}</div>
+            <div>Результат: ${percent}</div>
+          </div>
+        </div>
+      </div>
+    </div>`;
 }
 
 function index(){
